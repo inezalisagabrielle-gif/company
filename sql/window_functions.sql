@@ -1,0 +1,9 @@
+rank function
+SELECT c.C_NAME, SUM(t.TOTAL_AMOUNT) AS total_spent, RANK() OVER (ORDER BY SUM(t.TOTAL_AMOUNT) DESC) AS spen
+SELECT C_NAME, DEMAND, DENSE_RANK() OVER (ORDER BY DEMAND DESC) AS demand_rank FROM CUSTOMER; 
+aggregate window function
+SELECT TRANSACTION_DATE, TOTAL_AMOUNT, SUM(TOTAL_AMOUNT) OVER ( ORDER BY TRANSACTION_DATE RO
+navigation function
+SELECT TRANSACTION_DATE, TOTAL_AMOUNT, LAG(TOTAL_AMOUNT) OVER (ORDER BY TRANSACTION_DATE) AS previous_amount 
+distribution function NTILE
+SELECT c.C_NAME, SUM(t.total_amount) AS total, NTILE(4) OVER (ORDER BY SUM(t.total_amount) DESC) AS customer_quartile FROM customer c JOIN transaction t ON c.C_ID = t.C_ID GROUP BY c.C_NAME ORDER BY total DESC;
