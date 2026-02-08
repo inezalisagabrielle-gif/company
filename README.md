@@ -10,7 +10,7 @@ The goal is to identify top customers, analyze sales trends, detect unsold cars,
 Tables: CUSTOMER, PRODUCT, TRANSACTION  
 Relationships: CUSTOMER.C_ID → TRANSACTION.C_ID, PRODUCT.P_ID → TRANSACTION.P_ID
 
-![ER Diagram]<img width="1920" height="1080" alt="er_diagram" src="https://github.com/user-attachments/assets/69571e27-c7aa-4221-a246-02a09f06818d" />
+![ER Diagram](ER_DIAGRAM/er_diagram.png)
 
 ## Success Criteria
 
@@ -28,25 +28,28 @@ Relationships: CUSTOMER.C_ID → TRANSACTION.C_ID, PRODUCT.P_ID → TRANSACTION.
 
 5. Rank customers by demand level → DENSE_RANK()  
    *(Ranks customers without skipping ranks for ties, useful for demand analysis)*
-   ## INNER JOIN – Valid Car Sales
+   
+
+## INNER JOIN – Valid Car Sales
 Shows actual car sales with customer and product details.
-![INNER JOIN]<img width="1904" height="924" alt="INNER JOIN" src="https://github.com/user-attachments/assets/0a9a8abc-37d7-467d-8aa9-c9d7d1df5fce" />
+![INNER JOIN](screenshots/inner_join.png)
 
 ## LEFT JOIN – Customers Without Purchases
 Identifies customers who never bought any car.
-![LEFT JOIN]<img width="1906" height="921" alt="LEFT JOIN" src="https://github.com/user-attachments/assets/50d205ed-2f72-425b-be19-ed1fd30ed8cc" />
+![LEFT JOIN](screenshots/left_join.png)
 
 ## RIGHT JOIN – Cars Without Sales
 Shows car brands with no transactions.
-![RIGHT JOIN]<img width="1911" height="874" alt="right join null" src="https://github.com/user-attachments/assets/78b95df1-e965-442d-8124-73babdb2d2e7" />
+![RIGHT JOIN](screenshots/right_join_null.png)
 
 ## RIGHT JOIN – Cars With Sales
-Shows car brands that have been purchased.
-![RIGHT JOIN]<img width="1894" height="916" alt="RIGHT JOIN" src="https://github.com/user-attachments/assets/ae19a6de-eb5f-4308-9d8e-971bb300f28a" />
+Shows car brands with purchase.
+![RIGHT JOIN](screenshots/right_join.png)
 
 ## FULL OUTER JOIN – All Records
 Shows matched and unmatched customers and transactions.
-![FULL JOIN]<img width="1894" height="941" alt="FULL OUTER JOIN" src="https://github.com/user-attachments/assets/77bc68d5-f460-44a7-98f7-2c3613f4e14b" />
+![FULL JOIN](screenshots/full_join.png)
+
 
 ## RANK – Top Customers by Spending
 ![RANK]<img width="1903" height="909" alt="RANK" src="https://github.com/user-attachments/assets/65d3f078-0c40-4496-baae-180341997155" />
