@@ -32,47 +32,43 @@ Relationships: CUSTOMER.C_ID → TRANSACTION.C_ID, PRODUCT.P_ID → TRANSACTION.
 
 ## INNER JOIN – Valid Car Sales
 Shows actual car sales with customer and product details.
-![INNER JOIN](screenshots/inner_join.png)
+![INNER JOIN](screenshots/INNER_JOIN.png)
 
 ## LEFT JOIN – Customers Without Purchases
 Identifies customers who never bought any car.
-![LEFT JOIN](screenshots/left_join.png)
+![LEFT JOIN](screenshots/LEFT_JOIN.png)
 
 ## RIGHT JOIN – Cars Without Sales
 Shows car brands with no transactions.
-![RIGHT JOIN](screenshots/right_join_null.png)
+![RIGHT JOIN](screenshots/RIGHT_JOIN_NULL.png)
 
 ## RIGHT JOIN – Cars With Sales
 Shows car brands with purchase.
-![RIGHT JOIN](screenshots/right_join.png)
+![RIGHT JOIN](screenshots/RIGHT_JOIN.png)
 
 ## FULL OUTER JOIN – All Records
 Shows matched and unmatched customers and transactions.
-![FULL JOIN](screenshots/full_join.png)
+![FULL JOIN](screenshots/FULL_OUTER-JOIN.png)
 
 ## RANK – Top Customers by Spending
-![RANK](screenshots/rank.png)
+The RANK() window function is used to rank customers based on their total car spending.
+This helps identify high-value customers for loyalty programs.
+![RANK Result](screenshots/RANK.png)
 
-## SUM() OVER – Running Total of Sales
-![Running Total](screenshots/running_total.png)
+## AGGREGATE FUNCTION-Running Total of Car Sales
+The SUM() OVER() function calculates cumulative car sales over time.
+This allows analysis of overall sales growth.
+![Running Total Result](screenshots/aggregate.png)
 
-## LAG – Sales Comparison
-![LAG](screenshots/lag_sales.png)
+## NAVIGATION FUNCTION-Sales Comparison Using LAG
+The LAG() function compares each transaction with the previous one.
+It helps detect increases or decreases in sales.
+![LAG Result](screenshots/navigation.png)
 
-## NTILE – Customer Segmentation
-![NTILE](screenshots/ntile_customers.png)
-
-## RANK – Top Customers by Spending
-![RANK]<img width="1903" height="909" alt="RANK" src="https://github.com/user-attachments/assets/65d3f078-0c40-4496-baae-180341997155" />
-
-## SUM() OVER – Running Total of Sales
-![Running Total]<img width="1896" height="941" alt="aggregate" src="https://github.com/user-attachments/assets/bd1579d5-72d9-42c4-8737-4c84ee1e7b25" />
-
-## LAG – Sales Comparison
-![LAG]<img width="1891" height="859" alt="navigation" src="https://github.com/user-attachments/assets/5ce8f7cd-c2d0-47e3-9799-46aa4a7dfd0f" />
-
-## NTILE – Customer Segmentation
-![NTILE]<img width="1908" height="890" alt="NTILE" src="https://github.com/user-attachments/assets/709c70db-9507-4980-ab4a-b4611fb3854c" />
+## NTILE FUNCTION-Customer Segmentation Using NTILE
+The NTILE(4) function divides customers into four spending groups.
+This helps apply targeted marketing strategies.
+![NTILE Result](screenshots/NTILE.png)
 
 ## Results Analysis
 
