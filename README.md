@@ -50,6 +50,17 @@ Shows car brands with purchase.
 Shows matched and unmatched customers and transactions.
 ![FULL JOIN](screenshots/full_join.png)
 
+## RANK – Top Customers by Spending
+![RANK](screenshots/rank.png)
+
+## SUM() OVER – Running Total of Sales
+![Running Total](screenshots/running_total.png)
+
+## LAG – Sales Comparison
+![LAG](screenshots/lag_sales.png)
+
+## NTILE – Customer Segmentation
+![NTILE](screenshots/ntile_customers.png)
 
 ## RANK – Top Customers by Spending
 ![RANK]<img width="1903" height="909" alt="RANK" src="https://github.com/user-attachments/assets/65d3f078-0c40-4496-baae-180341997155" />
