@@ -4,7 +4,7 @@ Student Name:INEZA Lisa Gabrielle
 Student ID: 28527
 Group: A
 ## Business Problem
-This project analyzes car sales for a dealership that sells brands such as BMW ,TESLA and etc.
+This project analyzes car sales for a dealership that sells brands such as BMW ,TESLA .
 The goal is to identify top customers, analyze sales trends, detect unsold cars, and segment customers for marketing decisions.
 ## Database Schema and ER Diagram
 Tables: CUSTOMER, PRODUCT, TRANSACTION  
